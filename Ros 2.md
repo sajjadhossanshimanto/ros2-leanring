@@ -60,3 +60,14 @@ Commands:
   Action Clients:
 
 ```
+## Remap node
+- let's us run the same node without modifing code or re-compiling
+```
+ros2 run my_py_pkg py_oop_node --ros-args -r __node:=temperature_sensor_1
+```
+- `-r`  -> `--remap` can also re replaced with this
+-  `ros2 node list`
+```
+/temperature_sensor_1
+/temperature_sensor_2
+```
