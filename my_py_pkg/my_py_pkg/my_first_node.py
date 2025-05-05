@@ -8,6 +8,7 @@ def main(args=None):
     ## do stuf
     node = Node("py_test")
     node.get_logger().info("Hello world")
+    rclpy.spin(node)# loop a node
 
     rclpy.shutdown()
 
