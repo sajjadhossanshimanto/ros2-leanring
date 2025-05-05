@@ -71,3 +71,11 @@ ros2 run my_py_pkg py_oop_node --ros-args -r __node:=temperature_sensor_1
 /temperature_sensor_1
 /temperature_sensor_2
 ```
+## Colcon symlink
+- specific to python only
+```
+colcon build --symlink-install
+```
+- with this our file is directed runed without compelling
+- sometime this might not work. then we have to follow the build-> source -> run 
+- <font color="#ff0000">note</font>: symlink is only for developmennt phase
