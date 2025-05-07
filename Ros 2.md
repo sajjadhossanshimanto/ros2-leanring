@@ -79,3 +79,13 @@ colcon build --symlink-install
 - with this our file is directed runed without compelling
 - sometime this might not work. then we have to follow the build-> source -> run 
 - <font color="#ff0000">note</font>: symlink is only for developmennt phase
+## Turtlesim
+- controller
+```
+ros2 run turtlesim turtle_teleop_key
+```
+- robo
+```
+ros2 run turtlesim turtlesim_node
+```
+
