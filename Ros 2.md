@@ -242,4 +242,31 @@ string data
 "data: ''
 "
 ```
+## inspect Topic
+- `ros2 topic -h`
+```
+Commands:
+  bw     Display bandwidth used by topic
+  delay  Display delay of topic from timestamp in header
+  echo   Output messages from a topic
+  find   Output a list of available topics of a given type
+  hz     Print the average receiving rate to screen
+  info   Print information about a topic
+  list   Output a list of available topics
+  pub    Publish a message to a topic
+  type   Print a topic's type>)
+```
+- `ros2 topic list` -> list all the <font color="#00b050">active</font> topic
+```
+/parameter_events
+/robot_news
+/rosout
+```
+- `ros2 topic echo /topic_name` -> creates a <font color="#ff0000">instant</font> <font color="#00b050">subscriber</font> 
+```
+data: Hello
+---
+data: Hello
+---
+data: Hello
 ```
