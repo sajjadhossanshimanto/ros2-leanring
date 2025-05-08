@@ -7,7 +7,14 @@ colcon build
 ```
 colcon  build --packages-select my_py_pkg
 ```
-
+### symlink
+- specific to python only
+```
+colcon build --symlink-install
+```
+- with this our file is directed runed without compelling
+- sometime this might not work. then we have to follow the build-> source -> run 
+- <font color="#ff0000">note</font>: symlink is only for developmennt phase
 ## Create a package
 
 ```
@@ -16,9 +23,7 @@ ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 - run this command in in <font color="#00b050">src</font> directory
 - 
 ## Minimal Node code
-
-## Inspect Node
-### ros2 node
+## ros2 node
 - `ros2 node -h `-> has only 2 commands 
 ```
 usage: ros2 node [-h] Call `ros2 node <command> -h` for more detailed usage. ...
@@ -71,14 +76,7 @@ ros2 run my_py_pkg py_oop_node --ros-args -r __node:=temperature_sensor_1
 /temperature_sensor_1
 /temperature_sensor_2
 ```
-## Colcon symlink
-- specific to python only
-```
-colcon build --symlink-install
-```
-- with this our file is directed runed without compelling
-- sometime this might not work. then we have to follow the build-> source -> run 
-- <font color="#ff0000">note</font>: symlink is only for developmennt phase
+
 ## Turtlesim
 - controller
 ```
