@@ -21,8 +21,72 @@ colcon build --symlink-install
 ros2 pkg create my_py_pkg --build-type ament_python --dependencies rclpy
 ```
 - run this command in in <font color="#00b050">src</font> directory
-- 
+## ros2 pkg
+- `ros2 pkg -h`
+```
+Commands:
+  create       Create a new ROS 2 package
+  executables  Output a list of package specific executables
+  list         Output a list of available packages
+  prefix       Output the prefix path of a package
+  xml          Output the XML of the package manifest or a specific tag
+```
+### list
+- `ros2 pkg list`
+```
+action_msgs
+action_tutorials_cpp
+action_tutorials_interfaces
+action_tutorials_py
+actionlib_msgs
+ament_cmake
+ament_cmake_auto
+....
+angles
+builtin_interfaces
+class_loader
+common_interfaces
+composition
+composition_interfaces
+console_bridge_vendor
+cv_bridge
+demo_nodes_cpp
+demo_nodes_cpp_native
+demo_nodes_py
+depthimage_to_laserscan
+desktop
+diagnostic_msgs
+domain_coordinator
+dummy_map_server
+dummy_robot_bringup
+dummy_sensors
+eigen3_cmake_module
+example_interfaces
+examples_rclcpp_minimal_action_client
+....
+rcl_action
+rcl_interfaces
+rcl_lifecycle
+rcl_logging_interface
+rcl_logging_spdlog
+rcl_yaml_param_parser
+...
+...
+```
+### executables
+- `ros2 pkg executables my_py_pkg`
+```
+my_py_pkg py_node
+my_py_pkg py_oop_node
+my_py_pkg robot_news_station
+```
+### prefix
+- `ros2 pkg prefix my_py_pkg`
+```
+/mnt/d/coding/ros2_ws/install/my_py_pkg
+```
 ## Minimal Node code
+- maybe nothing to add here
 ## ros2 node
 - `ros2 node -h `-> has only 2 commands 
 ```
