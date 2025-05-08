@@ -151,3 +151,95 @@ ros2 run turtlesim turtle_teleop_key
 ros2 run turtlesim turtlesim_node
 ```
 
+## ros2 interface
+- ` ros2 interface -h`
+```
+Commands:
+  list      List all interface types available
+  package   Output a list of available interface types within one package
+  packages  Output a list of packages that provide interfaces
+  proto     Output an interface prototype
+  show      Output the interface definition
+```
+- `ros2 interface packages`
+```
+action_msgs
+action_tutorials_interfaces
+actionlib_msgs
+builtin_interfaces
+composition_interfaces
+diagnostic_msgs
+example_interfaces
+geometry_msgs
+lifecycle_msgs
+logging_demo
+map_msgs
+nav_msgs
+pcl_msgs
+pendulum_msgs
+rcl_interfaces
+rmw_dds_common
+rosbag2_interfaces
+rosgraph_msgs
+sensor_msgs
+shape_msgs
+statistics_msgs
+std_msgs
+std_srvs
+stereo_msgs
+tf2_msgs
+trajectory_msgs
+turtlesim
+unique_identifier_msgs
+visualization_msgs
+```
+- `ros2 interface package example_interfaces `
+```
+example_interfaces/msg/Float64MultiArray
+example_interfaces/msg/MultiArrayDimension
+example_interfaces/msg/Byte
+example_interfaces/msg/Float32
+example_interfaces/msg/UInt64MultiArray
+example_interfaces/msg/Int8
+example_interfaces/srv/SetBool
+example_interfaces/msg/UInt8
+example_interfaces/msg/Int32
+example_interfaces/msg/Int64
+example_interfaces/msg/ByteMultiArray
+example_interfaces/msg/Float32MultiArray
+example_interfaces/msg/UInt32
+example_interfaces/msg/Int64MultiArray
+example_interfaces/msg/UInt64
+example_interfaces/msg/UInt16
+example_interfaces/msg/UInt16MultiArray
+example_interfaces/msg/UInt32MultiArray
+example_interfaces/msg/Int16
+example_interfaces/msg/Char
+example_interfaces/msg/Int32MultiArray
+example_interfaces/msg/Float64
+example_interfaces/srv/AddTwoInts
+example_interfaces/msg/WString
+example_interfaces/action/Fibonacci
+example_interfaces/msg/Int8MultiArray
+example_interfaces/msg/MultiArrayLayout
+example_interfaces/msg/Bool
+example_interfaces/msg/UInt8MultiArray
+example_interfaces/msg/Int16MultiArray
+example_interfaces/msg/String
+example_interfaces/srv/Trigger
+example_interfaces/msg/Empty
+```
+- `ros2 interface show example_interfaces/msg/String`
+```
+# This is an example message of using a primitive datatype, string.
+# If you want to test with this that's fine, but if you are deploying
+# it into a system you should create a semantically meaningful message type.
+# If you want to embed it in another message, use the primitive data type instead.
+string data
+```
+- `ros2 interface proto example_interfaces/msg/String`
+```
+"data: ''
+"
+```
+```
