@@ -24,7 +24,7 @@ def main(args=None):
     response = future.result()
     node._logger.info(f"{request.a} + {request.b} = {response.sum}")
 
-    rclpy.spin(node)
+    # rclpy.spin(node)# thatt can lead to spin inside spin
     rclpy.shutdown()
 
 if __name__=="__main__":
