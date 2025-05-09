@@ -27,6 +27,8 @@ setup(
             "add_int_service = my_py_pkg.5_service:main",
             "add_int_clint = my_py_pkg.6_service_clint:main",
             "add_int_clint_oop = my_py_pkg.7_clint_oop:main",
+            "test_param = my_py_pkg.9_paramiters_1:main",
+            "test_param_2 = my_py_pkg.9_paramiters_2:main"
         ],
     },
 )

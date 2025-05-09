@@ -510,3 +510,18 @@ data: Hello
  ros2 service call /add_two_number example_interfaces/srv/AddTwoInts "{a: 3, b: 7}"
 ```
 - `/add_two_number` -> service name that we provided inside `create_service` method
+## set param
+- ` ros2 param list`
+```
+/test_param:
+  start_from
+  time_period
+  use_sim_time
+```
+- `ros2 param set /test_param name shimanto` -> for this node should constantly use `get_parameter`
+```
+[INFO] [1746782895.420166075] [test_param]: hello bob
+[INFO] [1746782896.426552644] [test_param]: hello bob
+[INFO] [1746782897.424476770] [test_param]: hello shimanto
+[INFO] [1746782898.426413431] [test_param]: hello shimanto
+```
