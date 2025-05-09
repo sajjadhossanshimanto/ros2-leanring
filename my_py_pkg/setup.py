@@ -20,13 +20,13 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "py_node = my_py_pkg.my_first_node:main",
-            "py_oop_node = my_py_pkg.my_node_oop:main",
-            "robot_news_station = my_py_pkg.publisher:main",
-            "smartphone = my_py_pkg.subscriber:main",
-            "add_int_service = my_py_pkg.service:main",
-            "add_int_clint = my_py_pkg.service_clint:main",
-            "add_int_clint_oop = my_py_pkg.clint_oop:main"
+            "py_node = my_py_pkg.1_my_first_node:main",
+            "py_oop_node = my_py_pkg.2_my_node_oop:main",
+            "robot_news_station = my_py_pkg.3_publisher:main",
+            "smartphone = my_py_pkg.4_subscriber:main",
+            "add_int_service = my_py_pkg.5_service:main",
+            "add_int_clint = my_py_pkg.6_service_clint:main",
+            "add_int_clint_oop = my_py_pkg.7_clint_oop:main",
         ],
     },
 )
