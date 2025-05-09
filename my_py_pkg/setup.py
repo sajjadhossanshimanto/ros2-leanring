@@ -24,7 +24,8 @@ setup(
             "py_oop_node = my_py_pkg.my_node_oop:main",
             "robot_news_station = my_py_pkg.publisher:main",
             "smartphone = my_py_pkg.subscriber:main",
-            "add_int_service = my_py_pkg.service:main"
+            "add_int_service = my_py_pkg.service:main",
+            "add_int_clint = my_py_pkg.service_clint:main"
         ],
     },
 )
