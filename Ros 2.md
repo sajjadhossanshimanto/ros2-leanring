@@ -525,3 +525,7 @@ data: Hello
 [INFO] [1746782897.424476770] [test_param]: hello shimanto
 [INFO] [1746782898.426413431] [test_param]: hello shimanto
 ```
+- change runtime at the start
+```
+ros2 run my_py_pkg test_param_2 --ros-args -p start_from:=1000 -p time_period:=2.0
+```
